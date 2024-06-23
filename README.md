@@ -18,7 +18,7 @@ Number of classes: 33 (fruits and vegetables).
 # Model Architecture
 
 ### Layer Details
-Conv2D Layer:
+#### Conv2D Layer:
 
 Filters: 64
 
@@ -32,7 +32,7 @@ Padding: Valid
 
 Input Shape: (60, 60, 3)
 
-MaxPooling2D Layer:
+#### MaxPooling2D Layer:
 
 Pool Size: 2x2
 
@@ -40,19 +40,19 @@ Flatten Layer:
 
 Converts the 2D matrix into a 1D vector
 
-Dense Layer 1:
+#### Dense Layer 1:
 
 Units: 300
 
 Activation: ReLU
 
-Dense Layer 2:
+#### Dense Layer 2:
 
 Units: 100
 
 Activation: ReLU
 
-Dense Layer 3:
+#### Dense Layer 3:
 
 Units: 33 (number of classes)
 
@@ -62,14 +62,23 @@ Activation: Softmax
 
 ### Training Configuration
 Optimizer: SGD (Stochastic Gradient Descent)
+
 Loss Function: Sparse Categorical Crossentropy
+
 Metrics: Accuracy
-Hyperparameters
+
+#### Hyperparameters
+
 Learning Rate: Default (as defined by the SGD optimizer in Keras)
+
 Batch Size: 64
+
 Number of Epochs: 5
+
 Validation Split: 30%
-Preprocessing
+
+#### Preprocessing
+
 Image Normalization: Input images are normalized by scaling pixel values to the range [0, 1].
 
 # Model Performance
