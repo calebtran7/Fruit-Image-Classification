@@ -82,7 +82,9 @@ Validation Split: 30%
 Image Normalization: Input images are normalized by scaling pixel values to the range [0, 1].
 
 # Model Performance
+
 Final Accuracy after 5 epochs of training: 0.9746
+
 Loss achieved the validation set after 5 epochs of training: 0.0957
 
 <img width="645" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/38e046a3-f76e-460c-ba9b-cadf0d1ea983">
