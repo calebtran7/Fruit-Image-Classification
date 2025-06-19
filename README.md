@@ -1,120 +1,68 @@
-# Fruit-Image-Classification
+# ClassiFruit: Fruit Image Classifier Using CNNs and PyTorch
 
-This project focuses on building a robust image classification model to accurately identify and classify various types of fruits in images. I did this project in Python and utilized deep learning libraries such as Tensorflow and Keras. 
+This project focuses on building a robust image classification model to accurately identify and classify various types of fruits in images. I did this project in Python and utilized deep learning libraries such as PyTorch. In the Streamlit interface I created, users can upload an image and receive the top 3 predicted fruit types with confidence scores.
+
+# Technologies Used
+
+PyTorch: Model training and architecture
+
+Torchvision: Dataset handling and transforms
+
+Streamlit: Frontend deployment
+
+Matplotlib & Seaborn: Visualization
+
+Scikit-learn: Evaluation metrics
+
+# Demo
+
+https://github.com/user-attachments/assets/f1b8719a-3c4c-4fcf-888e-bff32e36ce86
+
 
 # Dataset
 Here is where I sourced the data from: https://www.kaggle.com/datasets/sshikamaru/fruit-recognition
 
 The dataset consisted of 33 classes of different fruits, with each class containing images of the fruit in varying orientations against a white background. 
 
-Total number of images: 22495.
+Dataset size: 16854 images (one fruit or vegetable per image).
 
-Training set size: 16854 images (one fruit or vegetable per image).
-
-Test set size: 5641 images (one fruit or vegetable per image).
+Data was split into 80% training / 20% testing
 
 Number of classes: 33 (fruits and vegetables).
 
-# Model Performance
+# Model Overview
+The CNN consists of:
 
-Final Accuracy after 5 epochs of training: 0.9746
+- 1 convolutional layer (64 filters)
 
-Loss achieved the validation set after 5 epochs of training: 0.0957
+- Max pooling and dropout
 
-<img width="645" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/38e046a3-f76e-460c-ba9b-cadf0d1ea983">
+- 3 fully connected layers
 
+- Softmax output for 33 fruit classes
 
-<img width="608" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/3e007e19-84b2-4f64-81ca-46f4c133f012">
+- Regularization via dropout and data augmentation prevents overfitting.
 
-Confusion Matrix:
+# Training/validation accuracy and loss plots:
 
-<img width="728" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/2d1a2bd5-327c-4610-9539-6a5f3be29911">
+<img width="586" alt="image" src="https://github.com/user-attachments/assets/e03397ab-fc1f-4220-b71f-b12a6fc7fee5" />
 
-
-## Feeding in custom images (not from dataset):
-
-Ex 1) 
-
-<img width="443" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/18b09450-b67d-445b-8798-9b9d35a88a9d">
-
-Ex 2) 
-
-<img width="443" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/58e65c8d-36d5-4552-af18-ce0e1700b924">
-
-Ex 3) 
-
-<img width="424" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/f6da226d-c1b4-43d3-8e07-82fb656d05ef">
-
-Ex 4) 
-
-<img width="434" alt="image" src="https://github.com/calebtran7/Fruit-Image-Classification/assets/121086856/1d836421-a038-4aae-a2d4-ab53c74ac359">
+<img width="581" alt="image" src="https://github.com/user-attachments/assets/d5b7e81a-d050-4357-86d6-7ee3a93a38fc" />
 
 
-# Final Model Architecture
+# Confusion matrix:
 
-### Layer Details
-#### Conv2D Layer:
+![image](https://github.com/user-attachments/assets/4048b37a-b49a-4059-a2c2-dca8dbc3d13a)
 
-Filters: 64
+# Future Steps
+- Add top-K bar chart or probability distribution plot
 
-Kernel Size: 3x3
+- Enable mobile responsiveness
 
-Activation: ReLu
+- Further model enhancement to increase accuracy & robustness
 
-Strides: 1
+- Adapt interface/features for a specific purpose e.g. agricultural sorting, automated checkout in grocery stores, nutrition apps, accessibility tool, etc.
 
-Padding: Valid
-
-Input Shape: (60, 60, 3)
-
-#### MaxPooling2D Layer:
-
-Pool Size: 2x2
-
-Flatten Layer:
-
-Converts the 2D matrix into a 1D vector
-
-#### Dense Layer 1:
-
-Units: 300
-
-Activation: ReLU
-
-#### Dense Layer 2:
-
-Units: 100
-
-Activation: ReLU
-
-#### Dense Layer 3:
-
-Units: 33 (number of classes)
-
-
-
-Activation: Softmax
-
-### Training Configuration
-Optimizer: SGD (Stochastic Gradient Descent)
-
-Loss Function: Sparse Categorical Crossentropy
-
-Metrics: Accuracy
-
-#### Hyperparameters
-
-Learning Rate: Default (as defined by the SGD optimizer in Keras)
-
-Batch Size: 64
-
-Number of Epochs: 5
-
-Validation Split: 30%
-
-#### Preprocessing
-
-Image Normalization: Input images are normalized by scaling pixel values to the range [0, 1].
 
 
 
