@@ -1,5 +1,7 @@
 # ClassiFruit: Fruit Image Classifier Using CNNs and PyTorch
 ### Author: Caleb Tran
+
+## Project Overview:
 This project focuses on building a robust image classification model to accurately identify and classify various types of fruits in images. I did this project in Python and utilized deep learning libraries such as PyTorch. In the Streamlit interface I created, users can upload an image and receive the top 3 predicted fruit types with confidence scores.
 
 # Technologies Used
@@ -18,7 +20,6 @@ Scikit-learn: Evaluation metrics
 
 https://github.com/user-attachments/assets/f1b8719a-3c4c-4fcf-888e-bff32e36ce86
 
-
 # Dataset
 Here is where I sourced the data from: https://www.kaggle.com/datasets/sshikamaru/fruit-recognition
 
@@ -29,6 +30,13 @@ Dataset size: 16854 images (one fruit or vegetable per image).
 Data was split into 80% training / 20% testing
 
 Number of classes: 33 (fruits and vegetables).
+
+Example dataset images:
+![Peach_0](https://github.com/user-attachments/assets/30024d18-f575-43e6-ab9e-1196c029a02d)
+Label: Peach
+
+![Watermelon_1](https://github.com/user-attachments/assets/7d9f8715-b93f-4ab3-85cf-8c5171b7a545)
+Label: Watermelon
 
 # Model Overview
 The CNN consists of:
