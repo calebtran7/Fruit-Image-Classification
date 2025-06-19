@@ -32,10 +32,14 @@ Data was split into 80% training / 20% testing
 Number of classes: 33 (fruits and vegetables).
 
 Example dataset images:
+
 ![Peach_0](https://github.com/user-attachments/assets/30024d18-f575-43e6-ab9e-1196c029a02d)
+
 Label: Peach
 
+
 ![Watermelon_1](https://github.com/user-attachments/assets/7d9f8715-b93f-4ab3-85cf-8c5171b7a545)
+
 Label: Watermelon
 
 # Model Overview
