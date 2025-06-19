@@ -1,5 +1,5 @@
 # ClassiFruit: Fruit Image Classifier Using CNNs and PyTorch
-
+### Author: Caleb Tran
 This project focuses on building a robust image classification model to accurately identify and classify various types of fruits in images. I did this project in Python and utilized deep learning libraries such as PyTorch. In the Streamlit interface I created, users can upload an image and receive the top 3 predicted fruit types with confidence scores.
 
 # Technologies Used
