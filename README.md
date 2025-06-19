@@ -66,7 +66,7 @@ The CNN consists of:
 
 ![image](https://github.com/user-attachments/assets/4048b37a-b49a-4059-a2c2-dca8dbc3d13a)
 
-# Future Steps
+# What's Next?
 - Add top-K bar chart or probability distribution plot
 
 - Enable mobile responsiveness
