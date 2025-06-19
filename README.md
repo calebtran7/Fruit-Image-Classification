@@ -75,6 +75,6 @@ The CNN consists of:
 
 - Adapt interface/features for a specific purpose e.g. agricultural sorting, automated checkout in grocery stores, nutrition apps, accessibility tool, etc.
 
-
+- Extend the model to accept live video input using webcam integration, and apply real-time fruit detection via object detection frameworks (e.g., YOLO, Detectron2)
 
 
